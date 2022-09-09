@@ -3,14 +3,14 @@ def print_to_console(out):
   
 def validating_temp(temp):
    if temp < 0 or temp > 45:
-    return False
+      return False
   else:
     return True
   
 
 def validating_soc(soc):
   if soc < 20 or soc > 80:
-    return False
+      return False
   else:
     return True
   
@@ -19,7 +19,7 @@ def validating_charge(chrate)
   if charge_rate > 0.8:
         return False
     else:
-    return True
+      return True
 
 def battery_is_ok(temp, soc, chrate):
  validating_temp(temp) and validating_soc(soc) and validating_charge(chrate):
